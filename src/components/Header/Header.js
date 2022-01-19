@@ -1,12 +1,12 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 import css from './Header.module.css';
 const Header = () => {
     return (
         <div className={css.header}>
-            <Link to="/users">Users</Link>
-            <Link to="/posts">Posts</Link>
+            <NavLink to="/users">Users</NavLink>
+            <NavLink to="/posts">Posts</NavLink>
         </div>
     );
 };
